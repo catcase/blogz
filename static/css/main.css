@@ -1,0 +1,73 @@
+body {
+    margin: 20px;
+    background: #bab3be;
+}
+
+.error {
+    color: red;
+}
+
+.main_title {
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.add_title {
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.nav a {
+    color: #000000;
+    padding-right: 10px;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.title {
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 4px;
+}
+
+.body {
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 4px;
+}
+
+.blog_posts a {
+    color: #43434b;
+    font-family: 'Shadows Into Light Two', cursive;
+    text-decoration: none;
+}
+
+.blog_posts a:hover {
+    color: #ffffff;
+}
+
+.blog_posts h3 {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.submit h1 {
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.submit h3 {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.posts {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 24px;
+}

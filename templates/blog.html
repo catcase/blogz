@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<center><h1>Build a Blog</h1></center>
+<h1 class="main_title">&bull;Build a Blog&bull;</h1>
 
-{% if submitted %}
+{% if submitted|length == 0 %}
+<p class="posts">No posts yet....</p>
+
+{% elif submitted %}
     <ul>
         {% for item in submitted %}
-        <li>
+        <li class="blog_posts">
             <a href='./blog?id={{item.id}}'><h1>{{item.title}}</h1></a>
             <h3>{{item.post}}</h3>
             <hr>

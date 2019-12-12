@@ -2,15 +2,15 @@
 <html>
     <head>
         <title>Build a Blog!</title>
-        <style>
-            .error {
-                color: red;
-            }
-        </style>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/main.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+
+    
     </head>
 <body>
 
-    <div>
+    <div class="nav">
         <a href="/blog">Main Blog Page</a>
         <a href="/newpost">Add a Blog Entry</a>
     </div>
