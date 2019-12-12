@@ -16,11 +16,16 @@ class Entry(db.Model):
         self.title = title
         self.post = post
 
-@app.route('/blog')
+@app.route('/blog', methods=['GET'])
 def index():
+
+    if request.args:
+        id = request.args.get('id')
+        blog = Entry.query.get(id)
+        return render_template('submit.html', item=blog)
+
     submitted = Entry.query.all()
     return render_template('blog.html', submitted=submitted)
-
 
 @app.route('/newpost', methods=['GET', 'POST'])
 def add():
@@ -48,15 +53,15 @@ def add():
             new_entry = Entry(title, post)
             db.session.add(new_entry)
             db.session.commit()
-            return redirect('/blog') #redirect uses GET method
+            return redirect('/blog?id=' + str(new_entry.id)) #redirect uses GET method
         else:
             return render_template('newpost.html', blog_title=blog_title, blog_title_error=blog_title_error, blog_entry=blog_entry, blog_entry_error=blog_entry_error)            
     else:
         return render_template('newpost.html')
 
-# @app.route('/submit', methods=['GET','POST'])
-# def submit():
-#     return render_template('submit.html')
+@app.route('/singleentry')
+def submit():
+    return render_template('submit.html')
 
 
 if __name__ == '__main__':

@@ -3,10 +3,16 @@
 
 <center><h1>Build a Blog</h1></center>
 
-<ol>
-    {% for item in submitted %}
-    <li>{{item.name}}</li>
-    {% endfor %}
-</ol>
+{% if submitted %}
+    <ul>
+        {% for item in submitted %}
+        <li>
+            <a href='./blog?id={{item.id}}'><h1>{{item.title}}</h1></a>
+            <h3>{{item.post}}</h3>
+            <hr>
+        </li>
+        {% endfor %}
+    </ul>
+{% endif %}
 
 {% endblock %}
