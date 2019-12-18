@@ -12,6 +12,9 @@
         <li class="blog_posts">
             <a href='./blog?id={{item.id}}'><h1>{{item.title}}</h1></a>
             <h3>{{item.post}}</h3>
+
+            <p class="username">Written by: <a href='./blog?user={{item.owner.id}}'>{{item.owner.username}}</a></p>
+
             <hr>
         </li>
         {% endfor %}

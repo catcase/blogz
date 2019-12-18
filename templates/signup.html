@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 class="register_here">Register Here!</h2>
+
+<form action='/signup', method='POST'>
+    <table>
+        <tr>
+        <td><label for="uname" class="uname">Username:</label></td>
+        <td><input id="uname" type="text" name="username" value="{{username}}"></td>
+        <!-- <td><span class="error">{{username_error}}</span></td> -->
+        </tr>
+        <tr>
+        <td><label for="password" class="password">Password:</label></td>
+        <td><input id="password" type="password" name="password"></td>
+        <!-- <td><span class="error">{{password_error}}</span></td> -->
+        </tr>
+        <tr>
+        <td><label for="verify" class="verify">Verify Password:</label></td>
+        <td><input id="verify" type="password" name="verify"></td>
+        <!-- <td><span class="error">{{verify_error}}</span></td> -->
+        </tr>
+        <tr>
+    </table>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}

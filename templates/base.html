@@ -5,14 +5,19 @@
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/main.css') }}">
         <link href="https://fonts.googleapis.com/css?family=News+Cycle&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+
 
     
     </head>
 <body>
 
     <div class="nav">
+        <a href="/">Home</a>
         <a href="/blog">Main Blog Page</a>
         <a href="/newpost">Add a Blog Entry</a>
+        <a href="/logout" class="log">Log Out</a>
+        <a href="/login" class="log">Login</a>
     </div>
 
     {% with messages = get_flashed_messages(with_categories = True) %}

@@ -5,6 +5,11 @@ body {
 
 .error {
     color: red;
+    font-family: 'News Cycle', sans-serif;
+}
+
+.logged_in {
+    font-family: 'News Cycle', sans-serif;
 }
 
 .main_title {
@@ -24,12 +29,16 @@ body {
 .nav a {
     color: #000000;
     padding-right: 10px;
-    font-family: 'Shadows Into Light Two', cursive;
-    letter-spacing: 2px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 1px;
 }
 
 a:hover {
     color: #ffffff;
+}
+
+.log {
+    float: right;
 }
 
 .title {
@@ -48,12 +57,9 @@ a:hover {
     text-decoration: none;
 }
 
-.blog_posts a:hover {
-    color: #ffffff;
-}
-
 .blog_posts h3 {
     font-family: 'News Cycle', sans-serif;
+    font-size: 23px;
 }
 
 .submit h1 {
@@ -71,3 +77,62 @@ a:hover {
     font-family: 'News Cycle', sans-serif;
     font-size: 24px;
 }
+
+.user_title {
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+
+.username {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.username a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.user_posts a {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+}
+
+.login {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.register_link{
+    font-family: 'News Cycle', sans-serif;
+}
+
+.register_link a {
+    color: #ffffff;
+}
+
+.register_link a:hover {
+    color: #000000;
+}
+
+.uname {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.password {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.verify {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.register_here {
+    font-family: 'News Cycle', sans-serif;
+}
+
